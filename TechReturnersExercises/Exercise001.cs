@@ -8,31 +8,49 @@ namespace TechReturners.Exercises
         public static String CapitalizeWord(String word) 
         {
             // Add your code here!
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            string first = word.Substring(0, 1);
+            string rest = word.Substring(1, (word.Length-1));
+            string capitalised = first.ToUpper() + rest;
+            return capitalised;
         }
 
         public static String GenerateInitials(String firstName, String lastName) 
         {
             // Add your code here!
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            string initials = firstName.Substring(0,1).ToUpper() + "." + lastName.Substring(0,1).ToUpper();
+            return initials;
         }
 
         public static double AddVat(double originalPrice, double vatRate) 
         {
             // Add your code here!
-            throw new NotImplementedException();
+            double  vat = (vatRate / 100) * originalPrice;
+            vat = Math.Round(vat, 2); 
+            double vatPrice = originalPrice + vat;
+            return vatPrice;
         }
 
         public static String Reverse(String sentence) 
         {
             // Add your code here!
-            throw new NotImplementedException();
+            char[] reversed = (sentence.ToCharArray());
+            Array.Reverse( reversed );
+            string str = new string(reversed);
+            return str;
         }
 
         public static int CountLinuxUsers(List<User> users) 
         {
             // Add your code here!
-            throw new NotImplementedException();
+            int count = 0; 
+            foreach (var user in users) {
+                if(user.Type == "Linux"){
+                    count = count + 1;
+                }
+            }
+            return count;
         }
     }
 }
