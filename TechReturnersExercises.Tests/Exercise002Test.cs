@@ -1,4 +1,4 @@
-/* using Xunit;
+using Xunit;
 using TechReturners.Exercises;
 
 namespace TechReturners.Tests
@@ -24,4 +24,3 @@ namespace TechReturners.Tests
         }
     }
 }
- */
