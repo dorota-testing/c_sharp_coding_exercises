@@ -6,9 +6,7 @@ namespace TechReturners.Exercises
     {
         public static bool IsFromManchester( Person person ) 
         {
-            // Add your code here!
-            string city = person.City;
-            if (city == "Manchester") {
+            if (person.City == "Manchester") {
                 return true;
             } else {
                 return false;
@@ -17,9 +15,7 @@ namespace TechReturners.Exercises
 
         public static bool CanWatchFilm(Person person, int ageLimit) 
         {
-            // Add your code here!
-            int age = person.Age;
-            if (age >= ageLimit) {
+            if (person.Age >= ageLimit) {
                 return true;
             } else {
                 return false;

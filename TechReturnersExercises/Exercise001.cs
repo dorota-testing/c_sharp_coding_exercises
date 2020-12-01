@@ -7,8 +7,6 @@ namespace TechReturners.Exercises
     {
         public static String CapitalizeWord(String word) 
         {
-            // Add your code here!
-            //throw new NotImplementedException();
             string first = word.Substring(0, 1);
             string rest = word.Substring(1, (word.Length-1));
             string capitalised = first.ToUpper() + rest;
@@ -17,15 +15,12 @@ namespace TechReturners.Exercises
 
         public static String GenerateInitials(String firstName, String lastName) 
         {
-            // Add your code here!
-            //throw new NotImplementedException();
             string initials = firstName.Substring(0,1).ToUpper() + "." + lastName.Substring(0,1).ToUpper();
             return initials;
         }
 
         public static double AddVat(double originalPrice, double vatRate) 
         {
-            // Add your code here!
             double  vat = (vatRate / 100) * originalPrice;
             vat = Math.Round(vat, 2); 
             double vatPrice = originalPrice + vat;
@@ -34,7 +29,6 @@ namespace TechReturners.Exercises
 
         public static String Reverse(String sentence) 
         {
-            // Add your code here!
             char[] reversed = (sentence.ToCharArray());
             Array.Reverse( reversed );
             string str = new string(reversed);
@@ -43,7 +37,6 @@ namespace TechReturners.Exercises
 
         public static int CountLinuxUsers(List<User> users) 
         {
-            // Add your code here!
             int count = 0; 
             foreach (var user in users) {
                 if(user.Type == "Linux"){
